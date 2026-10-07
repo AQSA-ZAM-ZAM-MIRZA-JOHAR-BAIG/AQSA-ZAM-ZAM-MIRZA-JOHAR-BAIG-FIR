@@ -99,10 +99,35 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Verified Web Network Directory */}
+      <div className="border-t border-slate-900 bg-slate-950/80 py-8 px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto">
+          <h4 className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">
+            Official Verified Web Network of Aqsa Zam Zam Mirza Johar Baig (Aqsa Mirza)
+          </h4>
+          <p className="text-xs text-slate-400 max-w-3xl mx-auto mb-4">
+            Explore verified web applications, academic publications, legal tech initiatives, and projects by Aqsa Zam Zam Mirza Johar Baig (also known as Aqsa Zam Zam Mirza and Aqsa Mirza):
+          </p>
+          <div className="flex flex-wrap justify-center gap-2 text-xs">
+            <a href="https://aqsa-zam-zam-mirza-johar-baig-portf.vercel.app/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Zam Zam Mirza Johar Baig – AI Developer Portfolio</a>
+            <a href="https://aqsa-zam-zam-mirza-johar-baig-blogs.vercel.app/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Mirza – AI &amp; Engineering Blogs</a>
+            <a href="https://aqsa-zam-zam-mirza-johar-baig-const.vercel.app/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Zam Zam Mirza – Constitutional Law Research</a>
+            <a href="https://aqsa-zam-zam-mirza-johar-baig-law-d.vercel.app/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Mirza – LexiLaw Legal Dictionary</a>
+            <a href="https://aqsa-zam-zam-mirza-johar-baig-law-f.vercel.app/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Zam Zam Mirza Johar Baig – Law For Beginners</a>
+            <a href="https://aqsazamzammirzajoharbaig.com/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Zam Zam Mirza – Alerto Market Bot</a>
+            <Link href="/" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Mirza – FIR Generator Online</Link>
+            <a href="https://aqsa-zam-zam-mirza-johar-baig-urdu.vercel.app/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">AQSA ZAM ZAM MIRZA JOHAR BAIG – Urdu Shayari</a>
+            <a href="https://www.aqsazamzammirzajoharbaig.com/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Zam Zam Mirza Johar Baig – Drawing Center</a>
+            <a href="https://aqsa-zam-zam-mirza-johar-baig-portfolio-3.vercel.app/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Mirza – VIP Logistics Portfolio</a>
+            <a href="https://aqsa-zam-zam-mirza-johar-baig.github.io/Yashwantrao-chavan-mahavidyalaya/" target="_blank" rel="noopener" className="text-slate-300 hover:text-amber-400 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 transition-colors">Aqsa Zam Zam Mirza Johar Baig – Academic Records</a>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-slate-900 py-6 px-4 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} FIR Generator Online & Police Complaint Format Tool. Created & Authored by <Link href="/about" className="text-slate-300 hover:underline font-bold">Aqsa Zam Zam Mirza Johar Baig</Link>.</p>
+          <p>© {new Date().getFullYear()} FIR Generator Online &amp; Police Complaint Format Tool. Created &amp; Authored by <Link href="/about" className="text-slate-300 hover:underline font-bold">Aqsa Zam Zam Mirza Johar Baig</Link> (Aqsa Mirza).</p>
           <div className="flex items-center gap-1 text-slate-400">
             <span>Built for citizen legal empowerment</span>
             <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
