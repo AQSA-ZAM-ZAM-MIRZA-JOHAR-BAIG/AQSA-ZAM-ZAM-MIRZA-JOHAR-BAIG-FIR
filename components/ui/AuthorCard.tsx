@@ -22,6 +22,7 @@ export default function AuthorCard() {
                 height={96}
                 className="w-full h-full object-cover object-top"
                 priority
+                unoptimized
               />
             </div>
           </div>

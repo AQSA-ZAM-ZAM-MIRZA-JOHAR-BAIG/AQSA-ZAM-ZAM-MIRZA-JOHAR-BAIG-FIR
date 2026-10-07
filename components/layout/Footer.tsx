@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Shield, Heart, Scale, Lock, ArrowUpRight } from 'lucide-react';
 import { FOUNDER_INFO } from '@/lib/blogData';
 
@@ -10,8 +11,14 @@ export default function Footer() {
       <div className="border-b border-slate-900 bg-slate-900/40 py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-slate-950 font-black text-xl shrink-0 shadow-lg shadow-amber-500/10">
-              AZ
+            <div className="w-12 h-12 rounded-xl overflow-hidden ring-2 ring-amber-500/40 shrink-0 shadow-lg shadow-amber-500/10 relative">
+              <Image
+                src="/profile.png"
+                alt="Aqsa Zam Zam Mirza Johar Baig"
+                fill
+                unoptimized
+                className="object-cover"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2 text-xs font-bold text-amber-400 uppercase tracking-widest">

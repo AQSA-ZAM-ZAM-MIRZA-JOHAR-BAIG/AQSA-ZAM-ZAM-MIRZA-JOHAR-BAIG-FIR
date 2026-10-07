@@ -16,8 +16,15 @@ export default function FounderBadge({ variant = 'compact', className = '' }: Fo
         href="/about"
         className={`inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20 transition-all group ${className}`}
       >
-        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-500/20 text-amber-400 group-hover:scale-110 transition-transform">
-          <Award className="w-3.5 h-3.5" />
+        <span className="flex h-7 w-7 items-center justify-center rounded-full overflow-hidden ring-1.5 ring-amber-500/60 shrink-0 group-hover:scale-105 transition-transform">
+          <Image
+            src={FOUNDER_INFO.avatarUrl}
+            alt={FOUNDER_INFO.name}
+            width={28}
+            height={28}
+            unoptimized
+            className="w-full h-full object-cover"
+          />
         </span>
         <span className="text-xs sm:text-sm font-medium tracking-wide">
           Created & Maintained by <strong className="font-semibold text-amber-200 underline underline-offset-4 decoration-amber-500/40">Aqsa Zam Zam Mirza Johar Baig</strong>
@@ -40,6 +47,7 @@ export default function FounderBadge({ variant = 'compact', className = '' }: Fo
                 alt={FOUNDER_INFO.name}
                 width={48}
                 height={48}
+                unoptimized
                 className="w-full h-full object-cover object-top"
               />
             </div>
@@ -69,9 +77,18 @@ export default function FounderBadge({ variant = 'compact', className = '' }: Fo
   return (
     <Link
       href="/about"
-      className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/80 border border-amber-500/30 text-xs font-medium text-amber-300 hover:text-amber-200 hover:border-amber-400 transition-all ${className}`}
+      className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-amber-500/30 text-xs font-medium text-amber-300 hover:text-amber-200 hover:border-amber-400 transition-all ${className}`}
     >
-      <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
+      <span className="w-5 h-5 rounded-full overflow-hidden ring-1 ring-amber-500/50 shrink-0 inline-block">
+        <Image
+          src={FOUNDER_INFO.avatarUrl}
+          alt={FOUNDER_INFO.name}
+          width={20}
+          height={20}
+          unoptimized
+          className="w-full h-full object-cover"
+        />
+      </span>
       <span>Created by <strong>Aqsa Zam Zam Mirza Johar Baig</strong></span>
     </Link>
   );

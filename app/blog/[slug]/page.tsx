@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { BLOG_POSTS, FOUNDER_INFO } from '@/lib/blogData';
 import AuthorCard from '@/components/ui/AuthorCard';
@@ -120,8 +121,14 @@ export default async function BlogPostPage({ params }: PostPageProps) {
 
           {/* Exact Required Byline format */}
           <div className="pt-2 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center font-black text-slate-950 text-sm">
-              AZ
+            <div className="w-10 h-10 rounded-xl overflow-hidden ring-2 ring-amber-500/40 shrink-0 relative">
+              <Image
+                src="/profile.png"
+                alt="Aqsa Zam Zam Mirza Johar Baig"
+                fill
+                unoptimized
+                className="object-cover"
+              />
             </div>
             <div>
               <p className="text-xs font-bold text-slate-200">
