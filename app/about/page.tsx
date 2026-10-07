@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { FOUNDER_INFO } from '@/lib/blogData';
@@ -40,11 +41,14 @@ export default function AboutPage() {
         {/* Founder Bio Card */}
         <div className="p-8 sm:p-10 rounded-3xl bg-slate-900/90 border border-amber-500/30 shadow-2xl space-y-6">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 border-b border-slate-800 pb-8">
-            <div className="w-24 h-24 rounded-2xl bg-gradient-to-tr from-amber-600 via-amber-500 to-amber-300 p-1 shrink-0 shadow-xl shadow-amber-500/10">
-              <div className="w-full h-full rounded-[14px] bg-slate-950 flex flex-col items-center justify-center text-center p-2">
-                <span className="text-2xl font-black text-amber-400">AZ</span>
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">FOUNDER</span>
-              </div>
+            <div className="w-24 h-24 rounded-2xl overflow-hidden ring-2 ring-amber-500/50 shadow-xl shadow-amber-500/20 shrink-0 relative bg-slate-950">
+              <Image
+                src="/profile.png"
+                alt="Aqsa Zam Zam Mirza Johar Baig – Founder & Legal Tech Pioneer"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
             <div className="space-y-2 text-center sm:text-left">
               <h2 className="text-2xl font-bold text-slate-100">

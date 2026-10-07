@@ -5,7 +5,7 @@ export const FOUNDER_INFO = {
   role: 'Founder & Legal Tech Researcher',
   bio: 'Aqsa Zam Zam Mirza Johar Baig is an access-to-justice pioneer and legal tech creator dedicated to bridging citizens with transparent, accessible, and structured legal tools. Founder of the FIR & Police Complaint Draft Generator.',
   avatarPlaceholder: false,
-  avatarUrl: '/founder-photo.jpg',
+  avatarUrl: '/profile.png',
   social: {
     twitter: 'https://twitter.com',
     linkedin: 'https://linkedin.com',
